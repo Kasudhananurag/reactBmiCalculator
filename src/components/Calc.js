@@ -21,13 +21,13 @@ export default function Calc() {
     
     const calcBMI = () =>
     {
-        const h = hght;
-        const w = wght;
-        const b = w/(h*h);
+        const h = Number(hght);
+        const w = Number(wght);
+        const b = Number(w/(h*h));
         setBmi(b);
         // alert(typeof bmi);  {/* alerts number */}
 
-        // console.log(bmi+" "+b);
+        console.log(bmi);
 
         if(b < 19) 
         {
